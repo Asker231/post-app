@@ -23,7 +23,7 @@ function HomePage() {
     <div className={style.homePage}>
 
         {
-         alert?<Alert severity="success">Вы успешно вошли {email}</Alert>:null
+         alert?<Alert className={style.hh} severity="success">Вы успешно вошли {email}</Alert>:null
         }
  
         <Header/>
