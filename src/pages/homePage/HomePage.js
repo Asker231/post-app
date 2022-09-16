@@ -2,8 +2,10 @@ import { Navigate } from 'react-router-dom';
 import style from './homepage.module.css';
 import AuthHook from '../../hooks/AuthHook.js'
 
+
 import Alert from '@mui/material/Alert';
 import { useEffect, useState } from 'react';
+import Header from '../../components/header/Header';
 
 
 function HomePage() {
@@ -11,9 +13,10 @@ function HomePage() {
 
   const {isAuth,email} = AuthHook();
   useEffect(()=>{
-  setTimeout(()=>{
+    setTimeout(()=>{
      setAlert(alert=>!alert)
   },2000)
+    
   },[])
 
   return isAuth? (
@@ -22,6 +25,8 @@ function HomePage() {
         {
          alert?<Alert severity="success">Вы успешно вошли {email}</Alert>:null
         }
+ 
+        <Header/>
     </div>
   ):(
     <Navigate to='/RegistrationPage'/>
