@@ -1,0 +1,9 @@
+.LoginPage{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    background-color: aqua;
+    align-items: center;
+    height: 100vh;
+    padding: 10px;
+}
