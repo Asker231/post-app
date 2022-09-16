@@ -1,0 +1,22 @@
+.out{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: flex-start;
+    position: fixed;
+    right: 30px;
+    top: 82px;
+    background-color: rgba(193, 195, 195, 0.73);
+    width: 200px;
+    padding: 20px;
+    border-radius: 20px;
+ 
+}.out>p{
+    font-size: 10px;
+}.out>button{
+    font-size:10px;
+    width: 40px;
+    border: none;
+    padding: 2px;
+    cursor: pointer;
+}

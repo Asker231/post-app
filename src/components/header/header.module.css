@@ -4,8 +4,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 0px 10px;
+
 }.header>.menu{
-    width: 100px;
-    height: 50px;
+   
     cursor: pointer;
 }
