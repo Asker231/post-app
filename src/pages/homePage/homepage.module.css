@@ -1,10 +1,7 @@
-.hh{
-  position: absolute;
-  z-index: 1111;
-  left: 130px;
 
-}.homePage{
+.homePage{
    height: 100vh;
+   overflow: scroll;
    background-color: rgb(242, 236, 247);
    position: relative;
 
@@ -17,9 +14,18 @@ text-decoration: none;
 color: #fff;
 font-size: auto;
 border-radius: 10px;
-
-}.wrap{
+}
+.wrap{
   position: fixed;
   bottom: 300px;
   right: 10px;
+  z-index: 9999;
+}.content{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 100%;
+  z-index: 1;
+  padding-top: 120px;
 }

@@ -1,14 +1,13 @@
-.wrap{
-    
-    
-}.wrap>.addPosts>a{
+.wrap>.addPosts>a{
     text-decoration: none;
     color: #fff;
     font-weight: bold;
 }.post{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     padding: 20px;
     gap: 10px;
+    height: 100vh;
     flex-wrap: wrap;
 }

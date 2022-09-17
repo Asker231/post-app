@@ -6,9 +6,9 @@ const Header = () => {
     const[out,setOut] = useState(false);
   return (
     <div className={style.header}>
-        <h1>logo</h1>
-        <div >
-            <Avatar onClick={()=>setOut(prev=>!prev)} className={style.menu} src="/broken-image.jpg" />
+        <h1>Enhell</h1>
+        <div className={style.menu}>
+            <Avatar onClick={()=>setOut(prev=>!prev)}  src="/broken-image.jpg" />
              {out?<Out/>:null}
         </div>
        
