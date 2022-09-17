@@ -1,6 +1,7 @@
 .postForm{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 20px;
     width: 500px;
     background-color: rgba(188, 190, 190, 0.38);
@@ -11,4 +12,6 @@
 }.postForm>input{
     color: #fff;
 
+}.postForm>.icon{
+    width: 40px;
 }

@@ -5,17 +5,19 @@ import Button  from '@mui/material/Button';
 import { v4 } from 'uuid';
 import { addPost } from '../../redux/postSlice/postSlice';
 import {useDispatch} from'react-redux'
+import  IconButton  from '@mui/material/IconButton';
+import PhotoCamera  from '@mui/icons-material/PhotoCamera';
 
-
+ 
 
 const Post =()=>{
   const[content,setContent]=useState();
   const[title,setTitle]=useState(null);
-  const[photo,setPhoto]=useState();
+  const[photo,setPhoto] = useState();
 
   const disp = useDispatch();
 
-
+   
   const data = {
        id:v4(),
        content,
@@ -42,16 +44,13 @@ const Post =()=>{
           rows={4}
           
         />
-        <TextField
-        onChange={(e)=>setPhoto(e.target.value)}
-        value={photo} 
-        id="standard-basic"
-        label="Введите url"
-        variant="standard" />
-        <Button onClick={()=> disp(addPost(data))} variant="contained" color="success">
+      <IconButton className={style.icon} color="primary" aria-label="upload picture" component="label">
+      <input hidden accept="image/*" type="file" onChange={(e)=>setPhoto(e.target.files[0])} />
+      <PhotoCamera />
+      </IconButton>
+      <Button onClick={()=> disp(addPost(data))} variant="contained" color="success">
            Опубликовать
-
-        </Button>
+      </Button>
         
 
     </div>
